@@ -24,13 +24,13 @@ const qrService = {
         }
       );
       const searchQr = await QrToken.findOne({
-        uniqToken: uniqSlice,
+        uniqId: uniqSlice,
       });
 
       if (!searchQr) {
         const qrdata = new QrToken({
-          code: qr_code,
-          uniqToken: uniqSlice,
+          qr: qr_code,
+          uniqId: uniqSlice,
         });
         await qrdata.save();
         return uniqSlice;
