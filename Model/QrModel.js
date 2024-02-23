@@ -2,7 +2,8 @@ import { Schema, model } from "mongoose";
 
 const QrSchema = new Schema(
   {
-    token:{type:String,}
+    code:{type:String},
+    uniqToken:{type:String}
   },
   {
     timestamps: true,
