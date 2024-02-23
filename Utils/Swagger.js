@@ -12,9 +12,7 @@ export const options = {
       version: "1.0.0",
       description: "QR geterate API",
     },
-    servers: [
-      { url: `http://localhost:${process.env.PORT}` },
-    ],
+    servers: [{ url: `http://localhost:${process.env.PORT}` }],
     components: {
       request: {
         QR: {
@@ -29,14 +27,14 @@ export const options = {
           },
         },
       },
-      schemas:{
-        QR:{
+      schemas: {
+        QR: {
           type: "object",
           properties: {
             qr: { type: "string", description: "required" },
             uniqID: { type: "string", description: "required" },
           },
-        }
+        },
       },
     },
     security: [

@@ -34,8 +34,8 @@ const qrService = {
         });
         await qrdata.save();
         return uniqSlice;
-      }else{
-        return {message:"uniqToken repeated"}
+      } else {
+        return { message: "uniqToken repeated" };
       }
     } catch (error) {}
   },

@@ -1,7 +1,7 @@
 import express, { Router } from "express";
-import qrController from "../QrController/QrController.js";
+import qrController from "../Controller/QrController.js";
 
-const qrRouter=Router()
+const qrRouter = Router();
 /**
  * @swagger
  * tags:
@@ -26,6 +26,6 @@ const qrRouter=Router()
  *                $ref: "#/components/schemas/QR"
  */
 
-qrRouter.get("/getQr",qrController.getQr)
+qrRouter.get("/getQr", qrController.getQr);
 
-export default qrRouter
+export default qrRouter;

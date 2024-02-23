@@ -2,8 +2,8 @@ import { Schema, model } from "mongoose";
 
 const QrSchema = new Schema(
   {
-    qr:{type:String},
-    uniqId:{type:String}
+    qr: { type: String },
+    uniqId: { type: String },
   },
   {
     timestamps: true,
