@@ -43,7 +43,7 @@ export const options = {
       },
     ],
   },
-  apis: ["./QrRouter/*.js"],
+  apis: ["./Router/*.js"],
 };
 
 export const specs = swaggerJSDoc(options);
